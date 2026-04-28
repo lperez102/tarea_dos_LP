@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Club Letra Azul</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tus estilos -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/styles_mq.css">
+</head>
+
+<body>
+  <div class="page">
+
+    <header class="site-header">
+      <div class="container header-row">
+        <div class="brand">
+          <img class="brand__logo" src="/assets/logo_cla.png" alt="Logo Club Letra Azul" />
+        </div>
+
+        <nav class="nav" aria-label="Navegación principal">
+          <a href="#inicio">Inicio</a>
+          <a href="#club">¿Qué es CLA?</a>
+          <a href="#talleres">Talleres</a>
+          <a href="#contacto">Contactanos</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="inicio">
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero-row">
+          <div class="hero-media">
+            <img src="/assets/index_portada.jpg" alt="Libros y lectura" />
+          </div>
+
+          <div class="hero-copy">
+            <p class="pill">AMAMOS LEER JUNTOS</p>
+            <h1 class="hero-title">Club Letra Azul</h1>
+            <p class="hero-text">
+              Somos un espacio para leer, compartir y aprender sobre textos y autores que nos mueven.
+            </p>
+            <a class="btn" href="#talleres">Ver talleres <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ¿QUÉ ES CLA? -->
+      <section id="club" class="section">
+        <div class="container">
+          <h2 class="section-title">¿QUÉ ES CLA?</h2>
+          <p>
+            Club Letra Azul es un espacio dedicado a la lectura compartida, el análisis literario
+            y la conversación alrededor de textos y autores contemporáneos.
+          </p>
+        </div>
+      </section>
+
+      <!-- TALLERES / CARDS -->
+      <section id="talleres" class="section">
+        <div class="container">
+          <h2 class="section-title">TALLERES MARZO</h2>
+
+          <div class="cards">
+            <article class="card">
+              <img class="card__img" src="/assets/wilde_index.jpeg" alt="Oscar Wilde en blanco y negro" />
+              <h3 class="card__title">Desde la herida a la redención</h3>
+              <p class="card__desc">
+                Lectura y análisis de <em>De Profundis</em>, explorando dolor, introspección y transformación.
+              </p>
+              <p class="card__meta"><strong>Facilitado por:</strong> Francisco Echeverría</p>
+            </article>
+
+            <article class="card">
+              <img class="card__img" src="/assets/stephen king_index.jpg" alt="Stephen King en blanco y negro" />
+              <h3 class="card__title">Desde la obsesión al abismo</h3>
+              <p class="card__desc">
+                Lectura y análisis de <em>Misery</em>, explorando obsesión, encierro y vulnerabilidad del creador.
+              </p>
+              <p class="card__meta"><strong>Facilitado por:</strong> Kendall Peña</p>
+            </article>
+
+            <article class="card">
+              <img class="card__img" src="/assets/rosa montero_index.jpg" alt="Rosa Montero en blanco y negro" />
+              <h3 class="card__title">Desde el deseo hasta la soledad</h3>
+              <p class="card__desc">
+                Lectura y análisis de <em>La carne</em>, explorando deseo, paso del tiempo e identidad.
+              </p>
+              <p class="card__meta"><strong>Facilitado por:</strong> Liz Quesada</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CALENDARIO -->
+      <section class="section" aria-labelledby="cal-title">
+        <div class="container">
+          <h2 id="cal-title" class="section-title">CALENDARIO DE ENCUENTROS LITERARIOS</h2>
+
+          <div class="calendar-box">
+            <div class="table-wrap">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Fecha</th>
+                    <th>Actividad</th>
+                    <th>Tema</th>
+                    <th>Modalidad</th>
+                    <th>Hora</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>3 de abril</td>
+                    <td>Taller de poesía contemporánea</td>
+                    <td>La voz íntima en la poesía actual</td>
+                    <td>Presencial</td>
+                    <td>6:00 p.m.</td>
+                  </tr>
+                  <tr>
+                    <td>10 de abril</td>
+                    <td>Club de lectura</td>
+                    <td>Narrativas distópicas</td>
+                    <td>Virtual</td>
+                    <td>7:00 p.m.</td>
+                  </tr>
+                  <tr>
+                    <td>15 de abril</td>
+                    <td>Laboratorio de escritura</td>
+                    <td>Crear personajes memorables</td>
+                    <td>Presencial</td>
+                    <td>6:30 p.m.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer id="contacto" class="site-footer">
+      <div class="container">
+        <div class="footer-inner">
+          <p>© Club Letra Azul · Actualizado febrero, 2026.</p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>

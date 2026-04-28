@@ -1,0 +1,176 @@
+/* =====================================================
+   MEDIA QUERIES
+===================================================== */
+
+
+/* =====================================================
+   TABLET
+   max-width: 768px
+   2 columnas
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .container {
+    width: 92%;
+  }
+
+  .header-row {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .brand {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav {
+    justify-content: center;
+  }
+
+  h1,
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  h2,
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  h3,
+  .card__title {
+    font-size: 1rem;
+  }
+
+  p,
+  .hero-text,
+  .card__desc {
+    font-size: 0.95rem;
+  }
+
+  .hero-media,
+  .hero-copy {
+    flex: 1 1 100%;
+  }
+
+  .hero-media {
+    height: clamp(13rem, 55vw, 20rem);
+  }
+
+  .hero-copy {
+    padding: 1.3rem;
+  }
+
+  .section {
+    padding: 1.4rem 0 1.8rem;
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 1rem);
+    max-width: calc(50% - 1rem);
+  }
+
+  .btn {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+   max-width: 480px
+   1 columna
+===================================================== */
+
+@media (max-width: 480px) {
+
+  .container {
+    width: 94%;
+  }
+
+  .brand__logo {
+    width: 5rem;
+  }
+
+  .brand__title {
+    font-size: 1.1rem;
+  }
+
+  .nav {
+    gap: 0.8rem;
+    justify-content: center;
+  }
+
+  .nav a {
+    font-size: 0.9rem;
+  }
+
+  h1,
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  h2,
+  .section-title {
+    font-size: 1.05rem;
+  }
+
+  h3,
+  .card__title {
+    font-size: 0.98rem;
+  }
+
+  p,
+  .hero-text,
+  .card__desc,
+  .card__meta {
+    font-size: 0.9rem;
+  }
+
+  .hero-copy {
+    padding: 1.2rem;
+  }
+
+  .hero-media {
+    height: clamp(12rem, 65vw, 18rem);
+  }
+
+  .section {
+    padding: 1.2rem 0 1.5rem;
+  }
+
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.45rem 0.9rem;
+  }
+
+  .table th,
+  .table td {
+    font-size: 0.85rem;
+    padding: 0.6rem;
+  }
+}
+
+
+/* =====================================================
+   DISPOSITIVOS TÁCTILES
+===================================================== */
+
+@media (hover: none) {
+
+  .btn:hover,
+  .card:hover,
+  .nav a:hover,
+  .brand__logo:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}

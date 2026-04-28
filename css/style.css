@@ -1,0 +1,370 @@
+/* =====================================================
+   ESTILO GENERAL
+===================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: #ffffff;
+  color: #111;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =====================================================
+   JERARQUÍA TIPOGRÁFICA
+===================================================== */
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a,
+.btn {
+  font-weight: 600;
+}
+
+/* =====================================================
+   CONTENEDOR GENERAL
+===================================================== */
+
+.page {
+  width: 100%;
+  margin: 0;
+  background: #fff;
+}
+
+.container {
+  width: 92%;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.site-header {
+  background: #f2e7b8;
+  padding: 0.9rem 0;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand__logo {
+  width: 6rem;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.brand__logo:hover {
+  transform: scale(1.05);
+}
+
+.brand__title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* =====================================================
+   NAVEGACIÓN
+===================================================== */
+
+.nav {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #111;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav a:hover {
+  color: #5e82c7;
+  transform: translateY(-0.15rem);
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+  padding: 1rem 0;
+}
+
+.hero-row {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.hero-media,
+.hero-copy {
+  flex: 1 1 22rem;
+}
+
+.hero-media {
+  height: clamp(14rem, 38vw, 24rem);
+}
+
+.hero-media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.hero-copy {
+  background: #5e82c7;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.9rem;
+  animation: aparecer 0.8s ease-out;
+}
+
+.hero-title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.pill {
+  display: inline-block;
+  margin: 0 auto;
+  background: #f2e7b8;
+  color: #5e82c7;
+  padding: 0.45rem 1rem;
+  border-radius: 999rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+}
+
+.hero-text {
+  margin: 0 auto;
+  max-width: 36em;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* =====================================================
+   BOTÓN
+===================================================== */
+
+.btn {
+  display: inline-block;
+  margin: 0 auto;
+  background: #fff;
+  color: #111;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn span {
+  display: inline-block;
+}
+
+/* =====================================================
+   ANIMACIÓN CON KEYFRAMES
+===================================================== */
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =====================================================
+   SECCIONES
+===================================================== */
+
+.section {
+  padding: 1.75rem 0 2rem;
+}
+
+.section-title {
+  text-align: center;
+  color: #5e82c7;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 1rem;
+}
+
+/* =====================================================
+   CARDS
+   Desktop base: 3 columnas
+===================================================== */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+.card {
+  flex: 1 1 calc(33.333% - 1rem);
+  max-width: calc(33.333% - 1rem);
+  background: #f2e7b8;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-0.4rem);
+  box-shadow: 0 0.8rem 1.4rem rgba(0, 0, 0, 0.18);
+}
+
+.card__img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.card__title {
+  margin: 0.8rem 0 0.35rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.card__desc {
+  margin: 0 0 0.6rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.card__meta {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* =====================================================
+   TABLA / CALENDARIO
+===================================================== */
+
+.calendar-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 38rem;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 0.7rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.table th {
+  background: #f2e7b8;
+  font-weight: 700;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.site-footer {
+  background: #f2e7b8;
+  padding: 1.25rem 0;
+}
+
+.site-footer p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
